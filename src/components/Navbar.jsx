@@ -9,8 +9,8 @@ const Navbar = () => {
         </div>
         <div className="space-x-6">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Home</NavLink>
-          <NavLink to="/games" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Games</NavLink>
           <NavLink to="/software" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Software</NavLink>
+          <NavLink to="/games" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Games</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>About</NavLink>
         </div>
       </div>
