@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} MoonFall Software</p>
-          <p>Contact: <a href="mailto:hello@moonfall.software" className="text-blue-400 hover:underline">hello@moonfall.software</a></p>
+          <p>Contact: <a href="mailto:moonfallsoftware.outlook.com" className="text-blue-400 hover:underline">moonfallsoftware@outlook.com</a></p>
         </div>
 
         <div className="flex space-x-6">
