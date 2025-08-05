@@ -17,6 +17,7 @@ const Software = () => {
   return (
     <div className="mt-20 max-w-6xl mx-auto px-4">
       <h1 className="text-4xl font-bold text-center mb-8">Our Software</h1>
+      <p className="mt-4 text-gray-600 text-center">Check out the tools and apps we develop.</p>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <div
