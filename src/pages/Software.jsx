@@ -1,3 +1,5 @@
+import UnitConverterImg from '../assets/images/UnitConverterImg.png';
+
 const Software = () => {
   const projects = [
     {
@@ -10,7 +12,8 @@ const Software = () => {
       name: "Unit Converter",
       description:
         "A fast, responsive web app for converting between length, weight, temperature, area, and more. Built with React and Tailwind.",
-      link: "#", // Replace with real link later
+      link: "https://unit-converter-ruddy-nine.vercel.app",
+      image: UnitConverterImg,
     },
   ];
 
@@ -28,6 +31,13 @@ const Software = () => {
               {project.name}
             </h2>
             <p className="text-gray-700 mb-4">{project.description}</p>
+            {project.image && (
+            <img
+                src={project.image}
+                alt={project.name}
+                className="w-full h-auto rounded-md mb-4"
+            />
+            )}
             <a
               href={project.link}
               className="text-blue-500 hover:underline"
