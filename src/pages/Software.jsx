@@ -1,12 +1,14 @@
 import UnitConverterImg from '../assets/images/UnitConverterImg.png';
+import RecollectoImg from '../assets/images/RecollectoIcon.png';
 
 const Software = () => {
   const projects = [
     {
-      name: "Forget Me Note",
+      name: "Recollecto",
       description:
         "A daily task tracker with reminders and a clean mobile UI. Designed to help users stay on top of medication, routines, and personal goals.",
       link: "#", // Replace with real link later
+      image: RecollectoImg,
     },
     {
       name: "Unit Converter",
