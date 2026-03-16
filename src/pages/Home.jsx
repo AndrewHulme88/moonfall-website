@@ -1,4 +1,4 @@
-import logo from '../assets/images/FullLogo_Transparent.png';
+import logo from '../assets/images/MoonFallLogo.png';
 
 const Home = () => {
   return (
