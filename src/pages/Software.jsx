@@ -46,7 +46,7 @@ const Software = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Project →
+              View Project
             </a>
           </div>
         ))}
