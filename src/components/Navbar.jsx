@@ -1,16 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
+import logo from '../assets/images/MoonFallLogo.png';
+
 
 const Navbar = () => {
   return (
     <nav className="bg-gray-900 text-white w-full fixed top-0 left-0 shadow-md z-10">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <div className="text-2xl font-bold">
-          <Link to="/" className="text-yellow-400">Moonfall Software</Link>
+          <Link to="/"><img src={logo} alt="Moonfall Software Logo" className="mx-auto mb-1 w-20 h-auto rounded-full" /></Link>
         </div>
         <div className="space-x-6">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Home</NavLink>
-          <NavLink to="/software" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Software</NavLink>
           <NavLink to="/games" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Games</NavLink>
+          <NavLink to="/software" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>Software</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-400" : "hover:text-blue-400"}>About</NavLink>
         </div>
       </div>
