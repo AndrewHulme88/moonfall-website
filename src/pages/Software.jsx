@@ -20,9 +20,9 @@ const Software = () => {
   ];
 
   return (
-    <div className="mt-20 max-w-6xl mx-auto px-4">
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-900">Our Software</h1>
-      <p className="mt-4 text-gray-600 text-center">Check out the tools and apps we develop.</p>
+    <div className="text-center mt-20">
+      <h1 className="text-4xl font-bold text-center text-gray-900">Our Software</h1>
+      <p className="mt-4 mb-8 text-gray-600 text-center">Check out the tools and apps we develop.</p>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <div
@@ -37,7 +37,7 @@ const Software = () => {
             <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-auto rounded-md mb-4"
+                className="w-full h-64 object-contain rounded-md mb-4"
             />
             )}
             <a

@@ -21,7 +21,7 @@ const Games = () => {
   return (
   <div className="text-center mt-20">
     <h1 className="text-4xl font-bold text-gray-900">Our Games</h1>
-    <p className="mt-4 text-gray-600">Explore our latest and upcoming game projects.</p>
+    <p className="mt-4 mb-8 text-gray-600">Explore our latest and upcoming game projects.</p>
     <div className="grid gap-6 md:grid-cols-2">
       {projects.map((project) => (
         <div
@@ -36,7 +36,7 @@ const Games = () => {
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-auto rounded-md mb-4"
+              className="w-full h-64 object-contain rounded-md mb-4"
             />
           )}
           <a
