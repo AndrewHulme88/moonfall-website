@@ -1,4 +1,5 @@
 import EliImg from '../assets/images/Eli.png';
+import PongImg from '../assets/images/PongInvaders.png';
 
 const Games = () => {
   const projects = [
@@ -7,6 +8,12 @@ const Games = () => {
       description: "An atmospheric 2D platformer set in a mysterious world. Follow Eli on his journey to uncover hidden secrets and escape the darkness.",
       link: "https://moonfallsoftware.itch.io/elis-odyssey-brackeysjam",
       image: EliImg,
+    },
+    {
+      name: "Pong Invaders",
+      description: "A modern twist on the classic Pong game. Defend your paddle against waves of alien invaders in this fast-paced arcade shooter.",
+      link: "https://moonfallsoftware.itch.io/pong-invaders",
+      image: PongImg,
     }
 
   ];
