@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Software from "./pages/Software";
 import About from "./pages/About";
+import Assets from "./pages/Assets";
 import Footer from "./components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
             <Route path="/software" element={<Software />} />
+            <Route path="/assets" element={<Assets />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
