@@ -1,8 +1,16 @@
 import UnitConverterImg from '../assets/images/UnitConverterImg.png';
 import RecollectoImg from '../assets/images/RecollectoIcon.png';
+import CommitQuestImg from '../assets/images/CommitQuest.png';
 
 const Software = () => {
   const projects = [
+        {
+      name: "Commit Quest",
+      description:
+        "Commit Quest helps developers stay motivated by turning coding activity into RPG-style progression, social leaderboards, achievements, and profiles.",
+      link: "https://commitquestdev.com", // Replace with real link later
+      image: CommitQuestImg,
+    },
     {
       name: "Recollecto",
       description:
