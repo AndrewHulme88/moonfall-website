@@ -8,7 +8,7 @@ const Home = () => (
     <section className="shell grid min-h-[calc(100vh-72px)] content-center gap-12 border-b border-[#292b30] py-20 lg:grid-cols-[1.35fr_.65fr] lg:items-end">
       <div>
         <h1 className="mt-6 max-w-5xl text-[clamp(3.7rem,9vw,8.5rem)] font-medium leading-[.86] tracking-[-.075em] text-[#f4f4ef]">
-          Software worth <span className="text-[#74777e]">exploring.</span>
+          Software worth <span className="text-[#e8b85a]">exploring.</span>
         </h1>
       </div>
       <div className="border-l border-[#34363c] pl-7 lg:mb-3">
