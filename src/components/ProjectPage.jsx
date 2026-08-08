@@ -11,10 +11,9 @@ const ProjectPage = ({ eyebrow, title, intro, projects, linkLabel = 'View projec
     </section>
 
     <section className="project-list" aria-label={`${eyebrow} projects`}>
-      {projects.map((project, index) => (
+      {projects.map((project) => (
         <article className="project-card" key={project.name}>
           <div className="project-content">
-            <span className="project-index">{String(index + 1).padStart(2, '0')} / {String(projects.length).padStart(2, '0')}</span>
             <h2 className="project-title">{project.name}</h2>
             <p className="project-description">{project.description}</p>
             {project.link !== '#' && (

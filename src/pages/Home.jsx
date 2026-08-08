@@ -7,9 +7,8 @@ const Home = () => (
   <div>
     <section className="shell grid min-h-[calc(100vh-72px)] content-center gap-12 border-b border-[#292b30] py-20 lg:grid-cols-[1.35fr_.65fr] lg:items-end">
       <div>
-        <span className="eyebrow">Independent studio / Melbourne</span>
         <h1 className="mt-6 max-w-5xl text-[clamp(3.7rem,9vw,8.5rem)] font-medium leading-[.86] tracking-[-.075em] text-[#f4f4ef]">
-          We make things worth <span className="text-[#74777e]">exploring.</span>
+          Software worth <span className="text-[#74777e]">exploring.</span>
         </h1>
       </div>
       <div className="border-l border-[#34363c] pl-7 lg:mb-3">
@@ -19,17 +18,15 @@ const Home = () => (
     </section>
 
     <section className="shell py-24">
-      <div className="mb-10 flex items-end justify-between border-b border-[#292b30] pb-5">
+      <div className="mb-10 flex items-end justify-between pb-5">
         <div>
-          <span className="font-mono text-[11px] uppercase tracking-[.16em] text-[#777a81]">Selected work</span>
-          <h2 className="mt-3 text-3xl font-medium tracking-[-.04em] text-[#f2f2ed] sm:text-5xl">Made by MoonFall</h2>
+          <h2 className="mt-3 text-3xl font-medium tracking-[-.04em] text-[#f2f2ed] sm:text-5xl">Featured Projects</h2>
         </div>
-        <span className="hidden font-mono text-[10px] uppercase tracking-[.12em] text-[#5f6269] sm:block">2024 — Now</span>
       </div>
 
       <div className="grid gap-5 lg:grid-cols-2">
-        <Link to="/games" className="group relative min-h-[500px] overflow-hidden bg-[#15171b]">
-          <img src={EliImg} alt="Eli's Odyssey game scene" className="absolute inset-0 h-full w-full object-cover opacity-75 transition duration-500 group-hover:scale-[1.025] group-hover:opacity-90" />
+        <Link to="/games" className="group relative aspect-[16/10] overflow-hidden bg-black sm:aspect-video">
+          <img src={EliImg} alt="Eli's Odyssey game scene" className="absolute inset-0 h-full w-full object-contain opacity-75 transition duration-500 group-hover:scale-[1.025] group-hover:opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/5 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-7">
             <div><span className="font-mono text-[10px] uppercase tracking-[.14em] text-[#e8b85a]">Games</span><h3 className="mt-2 text-3xl font-medium tracking-[-.04em]">Eli's Odyssey</h3></div>
@@ -37,8 +34,8 @@ const Home = () => (
           </div>
         </Link>
 
-        <Link to="/software" className="group relative min-h-[500px] overflow-hidden bg-[#15171b]">
-          <img src={CommitQuestImg} alt="Commit Quest software preview" className="absolute inset-0 h-full w-full object-cover opacity-75 transition duration-500 group-hover:scale-[1.025] group-hover:opacity-90" />
+        <Link to="/software" className="group relative aspect-[16/10] overflow-hidden bg-black sm:aspect-video">
+          <img src={CommitQuestImg} alt="Commit Quest software preview" className="absolute inset-0 h-full w-full object-contain opacity-75 transition duration-500 group-hover:scale-[1.025] group-hover:opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/5 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-7">
             <div><span className="font-mono text-[10px] uppercase tracking-[.14em] text-[#e8b85a]">Software</span><h3 className="mt-2 text-3xl font-medium tracking-[-.04em]">Commit Quest</h3></div>

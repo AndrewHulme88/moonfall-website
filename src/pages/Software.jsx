@@ -17,13 +17,6 @@ const projects = [
     image: RecollectoImg,
     contain: true,
   },
-  {
-    name: 'Unit Converter',
-    description: 'A fast, responsive utility for converting length, weight, temperature, area, and more without getting in your way.',
-    link: 'https://unit-converter-ruddy-nine.vercel.app',
-    image: UnitConverterImg,
-    contain: true,
-  },
 ];
 
 const Software = () => (

@@ -27,9 +27,7 @@ body, #root {
 
 body {
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 78% 8%, rgba(106, 119, 255, 0.10), transparent 27rem),
-    #0b0c0e;
+  background: #0b0c0e;
 }
 
 a, button {
@@ -49,19 +47,11 @@ a, button {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: #a5a7ad;
+  color: #e8b85a;
   font-family: 'DM Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-}
-
-.eyebrow::before {
-  width: 24px;
-  height: 1px;
-  background: #e8b85a;
-  content: '';
 }
 
 .page-intro {
@@ -101,13 +91,11 @@ a, button {
   min-height: 400px;
   margin-top: 22px;
   overflow: hidden;
-  border: 1px solid #292b30;
   background: #111316;
-  transition: border-color 220ms ease, transform 220ms ease;
+  transition: transform 220ms ease;
 }
 
 .project-card:hover {
-  border-color: #50535a;
   transform: translateY(-2px);
 }
 
@@ -175,14 +163,6 @@ a, button {
   place-items: center;
   overflow: hidden;
   background: #181a1e;
-}
-
-.project-visual::after {
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(255,255,255,.035);
-  pointer-events: none;
-  content: '';
 }
 
 .project-visual img {

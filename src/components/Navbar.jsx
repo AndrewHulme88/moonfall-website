@@ -8,7 +8,6 @@ const links = [
   ['/games', 'Games'],
   ['/software', 'Software'],
   ['/assets', 'Assets'],
-  ['/about', 'About'],
 ];
 
 const Navbar = () => {
