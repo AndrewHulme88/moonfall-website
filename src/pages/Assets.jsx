@@ -14,8 +14,8 @@ const assets = [
 const Assets = () => (
   <ProjectPage
     eyebrow="Game assets"
-    title={<>Ready to build<br />something new.</>}
-    intro="Original, production-ready assets for independent developers who want character and atmosphere from the first frame."
+    title={<>Ready to build<br /><span className="text-[#74777e]">something new.</span></>}
+    intro="Original, production ready assets for independent developers who want character and atmosphere from the first frame."
     projects={assets}
     linkLabel="View asset"
   />

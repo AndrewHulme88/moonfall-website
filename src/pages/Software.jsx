@@ -29,8 +29,8 @@ const projects = [
 const Software = () => (
   <ProjectPage
     eyebrow="Software"
-    title={<>Useful tools.<br />Carefully made.</>}
-    intro="Small, focused products built to make everyday tasks feel clearer, faster, and a little more rewarding."
+    title={<>Useful tools<br /><span className="text-[#74777e]">that reward you.</span></>}
+    intro="Focused products built to make everyday tasks feel clearer, faster, and a little more rewarding."
     projects={projects}
   />
 );

@@ -20,8 +20,8 @@ const projects = [
 const Games = () => (
   <ProjectPage
     eyebrow="Games"
-    title={<>Small worlds.<br />Big atmosphere.</>}
-    intro="Independent games built around strong ideas, tactile play, and the kind of details that stay with you after the screen goes dark."
+    title={<>Small worlds.<br /><span className="text-[#74777e]">Big atmosphere.</span></>}
+    intro="Independent games built around strong ideas, immersive play, and atmosphere that stays with you well after the screen goes dark."
     projects={projects}
     linkLabel="Play on itch.io"
   />

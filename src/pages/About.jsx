@@ -6,13 +6,13 @@ const About = () => (
     <section className="page-intro">
       <div>
         <span className="eyebrow">About the studio</span>
-        <h1 className="page-title">Curious by<br />default.</h1>
+        <h1 className="page-title">Curious by<br /><span className="text-[#74777e]">default.</span></h1>
       </div>
-      <p className="page-copy">MoonFall Software is an independent studio in Melbourne, Australia, making games and digital products with a focus on clarity, atmosphere, and play.</p>
+      <p className="page-copy">MoonFall Software is an independent studio in Melbourne, Australia, making games and digital products with a focus on clarity, atmosphere, and enjoyment.</p>
     </section>
 
     <section className="grid gap-12 border-b border-[#292b30] py-20 md:grid-cols-2 md:gap-24">
-      <p className="text-3xl font-medium leading-tight tracking-[-.04em] text-[#eeeeea] md:text-5xl">Good work starts with a strong idea—and leaves out everything that does not serve it.</p>
+      <p className="text-3xl font-medium leading-tight tracking-[-.04em] text-[#eeeeea] md:text-5xl">Good work starts with a strong idea, and leaves out everything that does not serve it.</p>
       <div className="self-end">
         <p className="mb-7 leading-7 text-[#9b9da3]">We work across code, design, game development, and pixel art. Different mediums, same approach: make it purposeful, make it enjoyable, and pay attention to the small things.</p>
         <Link to="/games" className="text-link">See what we make <HiArrowRight /></Link>

@@ -13,7 +13,7 @@ const Home = () => (
         </h1>
       </div>
       <div className="border-l border-[#34363c] pl-7 lg:mb-3">
-        <p className="mb-8 max-w-sm leading-7 text-[#9b9da3]">MoonFall is an independent studio creating atmospheric games, useful software, and art for other makers.</p>
+        <p className="mb-8 max-w-sm leading-7 text-[#9b9da3]">MoonFall is an independent studio creating atmospheric games, useful software, and assets for other creators.</p>
         <Link to="/games" className="text-link">Explore our work <HiArrowRight /></Link>
       </div>
     </section>
