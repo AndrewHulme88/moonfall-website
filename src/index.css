@@ -1,9 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  height: 100%;
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #e8e8e4;
+  background: #0b0c0e;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, #root {
+  min-height: 100%;
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 78% 8%, rgba(106, 119, 255, 0.10), transparent 27rem),
+    #0b0c0e;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #0b0c0e;
+  background: #e8b85a;
+}
+
+.shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #a5a7ad;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 24px;
+  height: 1px;
+  background: #e8b85a;
+  content: '';
+}
+
+.page-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr);
+  gap: 48px;
+  align-items: end;
+  padding: 104px 0 60px;
+  border-bottom: 1px solid #292b30;
+}
+
+.page-title {
+  max-width: 780px;
+  margin: 16px 0 0;
+  color: #f4f4ef;
+  font-size: clamp(3.25rem, 8vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.92;
+}
+
+.page-copy {
+  max-width: 430px;
+  margin: 0;
+  color: #9b9da3;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.project-list {
+  padding: 22px 0 80px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 0.85fr 1.4fr;
+  min-height: 400px;
+  margin-top: 22px;
+  overflow: hidden;
+  border: 1px solid #292b30;
+  background: #111316;
+  transition: border-color 220ms ease, transform 220ms ease;
+}
+
+.project-card:hover {
+  border-color: #50535a;
+  transform: translateY(-2px);
+}
+
+.project-card:nth-child(even) {
+  grid-template-columns: 1.4fr 0.85fr;
+}
+
+.project-card:nth-child(even) .project-visual {
+  order: -1;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(28px, 5vw, 58px);
+}
+
+.project-index {
+  color: #6f7279;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+}
+
+.project-title {
+  margin: auto 0 14px;
+  color: #f3f3ef;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.project-description {
+  max-width: 420px;
+  margin: 0 0 26px;
+  color: #9b9da3;
+  line-height: 1.7;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #55585f;
+  color: #f1f1ed;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: gap 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.text-link:hover {
+  gap: 16px;
+  border-color: #e8b85a;
+  color: #e8b85a;
+}
+
+.project-visual {
+  position: relative;
+  display: grid;
+  min-height: 380px;
+  place-items: center;
+  overflow: hidden;
+  background: #181a1e;
+}
+
+.project-visual::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255,255,255,.035);
+  pointer-events: none;
+  content: '';
+}
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  object-fit: cover;
+  transition: transform 500ms cubic-bezier(.2,.8,.2,1);
+}
+
+.project-card:hover .project-visual img {
+  transform: scale(1.025);
+}
+
+.project-visual.contain img {
+  width: 72%;
+  height: 72%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .shell { width: min(100% - 28px, 1180px); }
+  .page-intro { grid-template-columns: 1fr; gap: 28px; padding: 76px 0 42px; }
+  .project-card, .project-card:nth-child(even) { grid-template-columns: 1fr; }
+  .project-card:nth-child(even) .project-visual { order: initial; }
+  .project-content { min-height: 330px; }
+  .project-visual { min-height: 300px; }
+  .project-visual img { min-height: 300px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}

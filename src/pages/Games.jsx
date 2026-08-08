@@ -1,56 +1,30 @@
+import ProjectPage from '../components/ProjectPage';
 import EliImg from '../assets/images/Eli.png';
 import PongImg from '../assets/images/PongInvaders.png';
 
-const Games = () => {
-  const projects = [
-    {
-      name: "Eli's Odyssey",
-      description: "An atmospheric 2D platformer set in a mysterious world. Follow Eli on his journey to uncover hidden secrets and escape the darkness.",
-      link: "https://moonfallsoftware.itch.io/elis-odyssey-brackeysjam",
-      image: EliImg,
-    },
-    {
-      name: "Pong Invaders",
-      description: "A modern twist on the classic Pong game. Defend your paddle against waves of alien invaders in this fast-paced arcade shooter.",
-      link: "https://moonfallsoftware.itch.io/pong-invaders",
-      image: PongImg,
-    }
+const projects = [
+  {
+    name: "Eli's Odyssey",
+    description: 'An atmospheric 2D platformer set in a mysterious world. Follow Eli through the darkness to uncover what has been left behind.',
+    link: 'https://moonfallsoftware.itch.io/elis-odyssey-brackeysjam',
+    image: EliImg,
+  },
+  {
+    name: 'Pong Invaders',
+    description: 'A fast arcade collision of two classics. Defend your paddle against waves of alien invaders and chase a new high score.',
+    link: 'https://moonfallsoftware.itch.io/pong-invaders',
+    image: PongImg,
+  },
+];
 
-  ];
+const Games = () => (
+  <ProjectPage
+    eyebrow="Games"
+    title={<>Small worlds.<br />Big atmosphere.</>}
+    intro="Independent games built around strong ideas, tactile play, and the kind of details that stay with you after the screen goes dark."
+    projects={projects}
+    linkLabel="Play on itch.io"
+  />
+);
 
-  return (
-  <div className="text-center mt-20">
-    <h1 className="text-4xl font-bold text-gray-900">Our Games</h1>
-    <p className="mt-4 mb-8 text-gray-600">Explore our latest and upcoming game projects.</p>
-    <div className="grid gap-6 md:grid-cols-2">
-      {projects.map((project) => (
-        <div
-          key={project.name}
-          className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-200"
-        >
-          <h2 className="text-2xl font-semibold mb-2 text-gray-900">
-            {project.name}
-          </h2>
-          <p className="text-gray-700 mb-4">{project.description}</p>
-          {project.image && (
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-64 object-contain rounded-md mb-4"
-            />
-          )}
-          <a
-            href={project.link}
-            className="text-blue-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Project
-          </a>
-        </div>
-      ))}
-    </div>
-  </div>
-  );
-};
 export default Games;

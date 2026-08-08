@@ -1,18 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Games from "./pages/Games";
-import Software from "./pages/Software";
-import About from "./pages/About";
-import Assets from "./pages/Assets";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Games from './pages/Games';
+import Software from './pages/Software';
+import About from './pages/About';
+import Assets from './pages/Assets';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-neutral-100">
-      <Router>
+    <Router>
+      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <div className="pt-16 px-4 flex-grow">
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
@@ -20,10 +20,10 @@ function App() {
             <Route path="/assets" element={<Assets />} />
             <Route path="/about" element={<About />} />
           </Routes>
-        </div>
-      </Router>
-      <Footer />
-    </div>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
