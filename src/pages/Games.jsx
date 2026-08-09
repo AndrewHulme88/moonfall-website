@@ -8,12 +8,14 @@ const projects = [
     description: 'An atmospheric 2D platformer set in a mysterious world. Follow Eli through the darkness to uncover what has been left behind.',
     link: 'https://moonfallsoftware.itch.io/elis-odyssey-brackeysjam',
     image: EliImg,
+    contain: true,
   },
   {
     name: 'Pong Invaders',
     description: 'A fast arcade collision of two classics. Defend your paddle against waves of alien invaders and chase a new high score.',
     link: 'https://moonfallsoftware.itch.io/pong-invaders',
     image: PongImg,
+    contain: true,
   },
 ];
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { HiArrowRight } from 'react-icons/hi2';
 import EliImg from '../assets/images/Eli.png';
-import CommitQuestImg from '../assets/images/CommitQuest.png';
+import CommitQuestImg from '../assets/images/CommitQuestNew.png';
 
 const Home = () => (
   <div>
